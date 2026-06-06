@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", ui-serif, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-mesa-dark: #1A2E1A;
+  --color-mesa-green: #2D4F1E;
+  --color-mesa-green-light: #4A634A;
+  --color-mesa-light: #F4F7F4;
+  --color-mesa-cream: #E8F3E5;
+  --color-mesa-accent-1: #D8E8D8;
+  --color-mesa-accent-2: #E9F2E9;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-mesa-light);
+  color: var(--color-mesa-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.oval-img {
+  border-radius: 50% 50% 0 0;
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.glass-panel {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
